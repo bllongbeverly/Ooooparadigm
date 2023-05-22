@@ -8,8 +8,14 @@
     "start": "node index.js"
   },
   "private": true,
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "svg",
+    "logo",
+    "graphics",
+    "vector",
+    "image"
+  ],
+    "author": "",
   "license": "UNLICENSED",
   "dependencies": {
     "inquirer": "^8.2.4"
