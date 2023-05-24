@@ -5,16 +5,29 @@ describe("SVG", () => {
   it("should render a 300 x 200 svg element", () => {
     const expectedSvg =
       '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"></svg>';
-
+      const svg = new SVG();
+      const actualSvg = svg.generateSVGContent();
+  
+      expect(actualSvg).toEqual(expectedSvg);
 
   });
 
   it("should append text element", () => {
     const expectedSvg =
       '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><text x="150" y="125" font-size="60" text-anchor="middle" fill="white">A</text></svg>';
+      const svg = new SVG();
+      const textElement = {
+        render() {
+          return '<text x="150" y="125" font-size="60" text-anchor="middle" fill="white">A</text>';
+        },
+  };
 
+  svg.addElement(textElement);
+  const actualSvg = svg.generateSVGContent();
 
-  });
+  expect(actualSvg).toEqual(expectedSvg);
+});
+});
 
   it("should set text message and color", () => {
     const expectedSvg =

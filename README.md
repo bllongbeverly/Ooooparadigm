@@ -23,3 +23,19 @@ AND the output text "Generated logo.svg" is printed in the command line
 WHEN I open the `logo.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered
 Mock-Up
+
+## Description
+
+This is another useful example for a person to be able to create their own svg logo for their use. 
+
+## Usage
+
+When prompted using Node, JSON, index.js, the user should be able to create an svg logo.
+
+## Sources
+
+Caleb Crum-Instructor
+chat GPT
+Patrick Lake-Tutor
+Bootcamp Modules
+
